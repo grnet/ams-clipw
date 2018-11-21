@@ -1,0 +1,11 @@
+[AMS]
+
+ams_host:
+ams_project:
+ams_topic:
+
+[AUTH]
+
+cert_path:
+key_path:
+
