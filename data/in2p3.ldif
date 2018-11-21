@@ -1,0 +1,1949 @@
+dn: o=glue
+objectClass: organization
+o: glue
+
+
+dn: GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Service
+objectClass: GLUE2CloudComputingService
+GLUE2ServiceID: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute
+GLUE2EntityName: Cloud Compute service on IN2P3-IRES
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2ServiceAdminDomainForeignKey: IN2P3-IRES
+GLUE2ServiceType: org.cloud.iaas
+GLUE2ServiceQualityLevel: production
+GLUE2ServiceStatusInfo:  http://argo.egi.eu/lavoisier/status_report-sf?site=IN2P3-IRES
+GLUE2CloudComputingServiceAUP: http://go.egi.eu/aup
+GLUE2ServiceComplexity: endpointType=2,share=1
+GLUE2ServiceCapability: cloud.managementSystem
+GLUE2ServiceCapability: cloud.vm.uploadImage
+GLUE2CloudComputingServiceTotalVM: 13
+GLUE2CloudComputingServiceRunningVM: 13
+GLUE2CloudComputingServiceSuspendedVM: 0
+GLUE2CloudComputingServiceHaltedVM: 0
+
+dn: GLUE2ManagerID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Manager
+objectClass: GLUE2CloudComputingManager
+GLUE2ManagerID: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2EntityName: Cloud Manager for https://sbgcloud.in2p3.fr:5000/v3
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2ManagerProductName: Foo Hypervisor
+GLUE2ManagerProductVersion: 0.0.0
+GLUE2ManagerServiceForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute
+GLUE2CloudComputingManagerCloudComputingServiceForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute
+GLUE2CloudComputingManagerTotalCPUs: 0
+GLUE2CloudComputingManagerTotalRAM: 0
+GLUE2CloudComputingManagerTotalAccelerators: 0
+GLUE2CloudComputingManagerInstanceMaxCPU: 48
+GLUE2CloudComputingManagerInstanceMinCPU: 1
+GLUE2CloudComputingManagerInstanceMaxRAM: 512000
+GLUE2CloudComputingManagerInstanceMinRAM: 512
+GLUE2CloudComputingManagerInstanceMaxDedicatedRAM: 0
+GLUE2CloudComputingManagerInstanceMinDedicatedRAM: 0
+GLUE2CloudComputingManagerInstanceMaxAccelerators: 0
+GLUE2CloudComputingManagerInstanceMinAccelerators: 0
+GLUE2CloudComputingManagerFailover: False
+GLUE2CloudComputingManagerLiveMigration: False
+GLUE2CloudComputingManagerVMBackupRestore: False
+
+# List of all the endpoints
+dn: GLUE2EndpointID=http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Endpoint
+objectClass: GLUE2CloudComputingEndpoint
+GLUE2EndpointID: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2EntityName: Cloud Computing Endpoint OpenStack (v2.1/X509-VOMS) at http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EndpointURL: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39
+GLUE2EndpointServiceForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute
+GLUE2EndpointCapability: cloud.managementSystem
+GLUE2EndpointCapability: cloud.vm.uploadImage
+GLUE2EndpointQualityLevel: production
+GLUE2EndpointInterfaceName: org.openstack.nova
+GLUE2EndpointHealthState: ok
+GLUE2EndpointHealthStateInfo: Endpoint functioning properly
+GLUE2EndpointServingState: production
+GLUE2EndpointTechnology: REST
+GLUE2EndpointInterfaceVersion: v2.1
+GLUE2EndpointImplementor: OpenStack Foundation
+GLUE2EndpointImplementationName: OpenStack Nova
+GLUE2EndpointImplementationVersion: havana
+GLUE2EndpointDowntimeInfo: See the GOC DB for downtimes: https://goc.egi.eu/portal/index.php?Page_Type=Downtimes_Calendar&site=IN2P3-IRES
+GLUE2EndpointSemantics: https://developer.openstack.org/api-ref/compute
+GLUE2EntityOtherInfo: Authn=X509-VOMS
+GLUE2EndpointIssuerCA: /C=NL/ST=Noord-Holland/L=Amsterdam/O=TERENA/CN=TERENA SSL CA 3
+GLUE2EndpointTrustedCA: /C=FR/O=CNRS/CN=CNRS2
+GLUE2EndpointTrustedCA: /C=FR/O=CNRS/CN=GRID2-FR
+GLUE2EndpointTrustedCA: /C=MK/O=MARGI/CN=MARGI-CA
+GLUE2EndpointTrustedCA: /C=PK/O=NCP/CN=PK-GRID-CA
+GLUE2EndpointTrustedCA: /C=RS/O=AEGIS/CN=AEGIS-CA
+GLUE2EndpointTrustedCA: /C=MA/O=MaGrid/CN=MaGrid CA
+GLUE2EndpointTrustedCA: /C=SI/O=SiGNET/CN=SiGNET CA
+GLUE2EndpointTrustedCA: /C=TR/O=TRGrid/CN=TR-Grid CA
+GLUE2EndpointTrustedCA: /C=AM/O=ArmeSFo/CN=ArmeSFo CA
+GLUE2EndpointTrustedCA: /C=FR/O=CNRS/CN=CNRS2-Projets
+GLUE2EndpointTrustedCA: /C=PL/O=GRID/CN=Polish Grid CA
+GLUE2EndpointTrustedCA: /C=DE/O=GermanGrid/CN=GridKa-CA
+GLUE2EndpointTrustedCA: /C=SK/O=SlovakGrid/CN=SlovakGrid CA
+GLUE2EndpointTrustedCA: /C=HR/O=edu/OU=srce/CN=SRCE CA
+GLUE2EndpointTrustedCA: /C=JP/O=NII/OU=HPCI/CN=HPCI CA
+GLUE2EndpointTrustedCA: /C=MX/O=UNAMgrid/OU=UNAM/CN=CA
+GLUE2EndpointTrustedCA: /DC=bg/DC=acad/CN=BG.ACAD CA
+GLUE2EndpointTrustedCA: /DC=GE/DC=TSU/CN=TSU Root CA
+GLUE2EndpointTrustedCA: /C=CY/O=CyGrid/O=HPCL/CN=CyGridCA
+GLUE2EndpointTrustedCA: /DC=org/DC=ugrid/CN=UGRID CA G2
+GLUE2EndpointTrustedCA: /C=AE/O=DarkMatter LLC/CN=DarkMatter IGTF CA
+GLUE2EndpointTrustedCA: /C=IR/O=IPM/OU=GCG/CN=IRAN-GRID-G2 CA
+GLUE2EndpointTrustedCA: /C=IT/O=INFN/CN=INFN Certification Authority
+GLUE2EndpointTrustedCA: /C=PT/O=LIPCA/CN=LIP Certification Authority
+GLUE2EndpointTrustedCA: /C=AE/O=DarkMatter LLC/CN=DarkMatter Secure CA
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 2
+GLUE2EndpointTrustedCA: /C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR
+GLUE2EndpointTrustedCA: /C=KR/O=KISTI/CN=KISTI Certification Authority
+GLUE2EndpointTrustedCA: /C=MX/O=UNAM/OU=UNAMgrid/CN=PKIUNAMgrid
+GLUE2EndpointTrustedCA: /C=RU/O=RDIG/CN=Russian Data-Intensive Grid CA
+GLUE2EndpointTrustedCA: /C=AE/O=DarkMatter LLC/CN=DarkMatter Assured CA
+GLUE2EndpointTrustedCA: /C=IR/O=IPM/O=IRAN-GRID/CN=IRAN-GRID CA
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/CN=QuoVadis Grid ICA G2
+GLUE2EndpointTrustedCA: /C=CL/O=REUNACA/CN=REUNA Certification Authority
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 2 G3
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 3 G3
+GLUE2EndpointTrustedCA: /C=BR/O=ANSP/OU=ANSPGrid CA/CN=ANSPGrid CA
+GLUE2EndpointTrustedCA: /C=CA/O=Grid/CN=Grid Canada Certificate Authority
+GLUE2EndpointTrustedCA: /C=EG/O=EG-GRID/CN=EG-GRID Certification Authority
+GLUE2EndpointTrustedCA: /C=ch/O=CERN/CN=CERN Root Certification Authority 2
+GLUE2EndpointTrustedCA: /C=DE/O=DFN-Verein/OU=DFN-PKI/CN=DFN SLCS-CA
+GLUE2EndpointTrustedCA: /DC=ORG/DC=SEE-GRID/CN=SEE-GRID CA 2013
+GLUE2EndpointTrustedCA: /C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Robots
+GLUE2EndpointTrustedCA: /C=AE/O=DarkMatter LLC/CN=DarkMatter Private Root CA G4
+GLUE2EndpointTrustedCA: /C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Services
+GLUE2EndpointTrustedCA: /C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Personnels
+GLUE2EndpointTrustedCA: /DC=me/DC=ac/DC=MREN/CN=MREN-CA
+GLUE2EndpointTrustedCA: /C=US/O=Pittsburgh Supercomputing Center/CN=PSC MyProxy CA
+GLUE2EndpointTrustedCA: /C=AR/O=e-Ciencia/OU=UNLP/L=CeSPI/CN=PKIGrid
+GLUE2EndpointTrustedCA: /C=JP/O=KEK/OU=CRC/CN=KEK GRID Certificate Authority
+GLUE2EndpointTrustedCA: /C=NL/O=NIKHEF/CN=NIKHEF medium-security certification auth
+GLUE2EndpointTrustedCA: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
+GLUE2EndpointTrustedCA: /C=UK/O=eScienceRoot/OU=Authority/CN=UK e-Science Root
+GLUE2EndpointTrustedCA: /O=Grid/O=NorduGrid/CN=NorduGrid Certification Authority 2015
+GLUE2EndpointTrustedCA: /DC=HK/DC=HKU/DC=GRID/CN=HKU Grid CA
+GLUE2EndpointTrustedCA: /C=US/O=Internet2/OU=InCommon/CN=InCommon IGTF Server CA
+GLUE2EndpointTrustedCA: /DC=ch/DC=cern/CN=CERN Grid Certification Authority
+GLUE2EndpointTrustedCA: /C=HU/O=NIIF/OU=Certificate Authorities/CN=NIIF Root CA 2
+GLUE2EndpointTrustedCA: /DC=CN/DC=Grid/CN=Root Certificate Authority at CNIC
+GLUE2EndpointTrustedCA: /DC=HK/DC=HKU/DC=GRID/CN=HKU Grid CA 2
+GLUE2EndpointTrustedCA: /C=DE/O=DFN-Verein/OU=DFN-PKI/CN=DFN-Verein PCA Grid - G01
+GLUE2EndpointTrustedCA: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 3
+GLUE2EndpointTrustedCA: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA Root
+GLUE2EndpointTrustedCA: /C=CN/O=HEP/CN=Institute of High Energy Physics Certification Authority
+GLUE2EndpointTrustedCA: /DC=DZ/DC=ARN/O=DZ e-Science GRID/CN=DZ e-Science CA
+GLUE2EndpointTrustedCA: /DC=IN/DC=GARUDAINDIA/CN=Indian Grid Certification Authority
+GLUE2EndpointTrustedCA: /C=US/O=DigiCert Grid/OU=www.digicert.com/CN=DigiCert Grid Trust CA
+GLUE2EndpointTrustedCA: /DC=IN/DC=GARUDAINDIA/CN=Indian Grid Certification Authority 2
+GLUE2EndpointTrustedCA: /C=AT/O=AustrianGrid/OU=Certification Authority/CN=Certificate Issuer
+GLUE2EndpointTrustedCA: /C=GR/O=HellasGrid/OU=Certification Authorities/CN=HellasGrid CA 2016
+GLUE2EndpointTrustedCA: /C=TW/O=AS/CN=Academia Sinica Grid Computing Certification Authority Mercury
+GLUE2EndpointTrustedCA: /C=US/O=DigiCert Grid/OU=www.digicert.com/CN=DigiCert Grid Trust CA G2
+GLUE2EndpointTrustedCA: /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root CA
+GLUE2EndpointTrustedCA: /DC=net/DC=ES/OU=Certificate Authorities/CN=NERSC Online CA
+GLUE2EndpointTrustedCA: /DC=CN/DC=Grid/DC=SDG/CN=Scientific Data Grid CA - G2
+GLUE2EndpointTrustedCA: /DC=org/DC=cilogon/C=US/O=CILogon/CN=CILogon OSG CA 1
+GLUE2EndpointTrustedCA: /DC=com/DC=DigiCert-Grid/O=DigiCert Grid/CN=DigiCert Grid CA-1
+GLUE2EndpointTrustedCA: /DC=org/DC=cilogon/C=US/O=CILogon/CN=CILogon Silver CA 1
+GLUE2EndpointTrustedCA: /DC=nl/DC=dutchgrid/O=Certification Authorities/CN=DCA Root G1 CA
+GLUE2EndpointTrustedCA: /DC=com/DC=DigiCert-Grid/O=DigiCert Grid/CN=DigiCert Grid CA-1 G2
+GLUE2EndpointTrustedCA: /DC=com/DC=DigiCert-Grid/O=DigiCert Grid/CN=DigiCert Grid Root CA
+GLUE2EndpointTrustedCA: /C=NL/ST=Noord-Holland/L=Amsterdam/O=TERENA/CN=TERENA eScience SSL CA 3
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/OU=Issuing Certification Authority/CN=QuoVadis Grid ICA
+GLUE2EndpointTrustedCA: /C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-001
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-002
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-003
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-004
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-005
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-006
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-007
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-008
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-009
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-010
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-011
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-012
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-013
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-014
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-015
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-016
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-017
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-018
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-019
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-020
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-021
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-022
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-023
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-024
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-025
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-026
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-027
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-028
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-029
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-030
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-031
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-032
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-033
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-034
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-035
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-037
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-038
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-039
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-040
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-041
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-042
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-043
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-044
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-045
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-046
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-047
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-048
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-049
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-050
+GLUE2EndpointTrustedCA: /C=NL/ST=Noord-Holland/L=Amsterdam/O=TERENA/CN=TERENA eScience Personal CA 3
+GLUE2EndpointTrustedCA: /DC=MD/DC=MD-Grid/O=RENAM/OU=Certification Authority/CN=MD-Grid CA
+GLUE2EndpointTrustedCA: /DC=by/DC=grid/O=uiip.bas-net.by/CN=Belarusian Grid Certification Authority
+GLUE2EndpointTrustedCA: /DC=RO/DC=RomanianGRID/O=ROSA/OU=Certification Authority/CN=RomanianGRID CA
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/OU=Root Certification Authority/CN=QuoVadis Root Certification Authority
+GLUE2EndpointTrustedCA: /DC=ke/DC=kenet/O=Kenya Education Network Trust/OU=Research Services/CN=KENET CA
+GLUE2EndpointTrustedCA: /C=US/O=National Center for Supercomputing Applications/OU=Certificate Authorities/CN=MyProxy CA 2013
+GLUE2EndpointTrustedCA: /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority
+GLUE2EndpointTrustedCA: /C=US/O=National Center for Supercomputing Applications/OU=Certificate Authorities/CN=Two Factor CA 2013
+GLUE2EndpointTrustedCA: /DC=ke/DC=kenet/O=Kenya Education Network Trust/OU=Research Services/CN=KENET ROOT CA
+GLUE2EndpointTrustedCA: /DC=eu/DC=rcauth/O=Certification Authorities/CN=Research and Collaboration Authentication Pilot G1 CA
+GLUE2EndpointTrustedCA: /DC=MY/DC=UPM/DC=MYIFAM/C=MY/O=MYIFAM/CN=Malaysian Identity Federation and Access Management
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-036
+
+dn: GLUE2EndpointID=https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Endpoint
+objectClass: GLUE2CloudComputingEndpoint
+GLUE2EndpointID: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2EntityName: Cloud Computing Endpoint OCCI (1.1/X509-VOMS) at https://sbgcloud.in2p3.fr:8787/occi1.1/
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EndpointURL: https://sbgcloud.in2p3.fr:8787/occi1.1/
+GLUE2EndpointServiceForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute
+GLUE2EndpointCapability: cloud.managementSystem
+GLUE2EndpointCapability: cloud.vm.uploadImage
+GLUE2EndpointQualityLevel: production
+GLUE2EndpointInterfaceName: eu.egi.cloud.vm-management.occi
+GLUE2EndpointHealthState: ok
+GLUE2EndpointHealthStateInfo: Endpoint functioning properly
+GLUE2EndpointServingState: production
+GLUE2EndpointTechnology: REST
+GLUE2EndpointInterfaceVersion: 1.1
+GLUE2EndpointImplementor: CSIC
+GLUE2EndpointImplementationName: ooi
+GLUE2EndpointImplementationVersion: 0.3.2
+GLUE2EndpointDowntimeInfo: See the GOC DB for downtimes: https://goc.egi.eu/portal/index.php?Page_Type=Downtimes_Calendar&site=IN2P3-IRES
+GLUE2EndpointSemantics: http://occi-wg.org/about/specification
+GLUE2EntityOtherInfo: Authn=X509-VOMS
+GLUE2EndpointIssuerCA: /C=NL/ST=Noord-Holland/L=Amsterdam/O=TERENA/CN=TERENA SSL CA 3
+GLUE2EndpointTrustedCA: /C=FR/O=CNRS/CN=CNRS2
+GLUE2EndpointTrustedCA: /C=FR/O=CNRS/CN=GRID2-FR
+GLUE2EndpointTrustedCA: /C=MK/O=MARGI/CN=MARGI-CA
+GLUE2EndpointTrustedCA: /C=PK/O=NCP/CN=PK-GRID-CA
+GLUE2EndpointTrustedCA: /C=RS/O=AEGIS/CN=AEGIS-CA
+GLUE2EndpointTrustedCA: /C=MA/O=MaGrid/CN=MaGrid CA
+GLUE2EndpointTrustedCA: /C=SI/O=SiGNET/CN=SiGNET CA
+GLUE2EndpointTrustedCA: /C=TR/O=TRGrid/CN=TR-Grid CA
+GLUE2EndpointTrustedCA: /C=AM/O=ArmeSFo/CN=ArmeSFo CA
+GLUE2EndpointTrustedCA: /C=FR/O=CNRS/CN=CNRS2-Projets
+GLUE2EndpointTrustedCA: /C=PL/O=GRID/CN=Polish Grid CA
+GLUE2EndpointTrustedCA: /C=DE/O=GermanGrid/CN=GridKa-CA
+GLUE2EndpointTrustedCA: /C=SK/O=SlovakGrid/CN=SlovakGrid CA
+GLUE2EndpointTrustedCA: /C=HR/O=edu/OU=srce/CN=SRCE CA
+GLUE2EndpointTrustedCA: /C=JP/O=NII/OU=HPCI/CN=HPCI CA
+GLUE2EndpointTrustedCA: /C=MX/O=UNAMgrid/OU=UNAM/CN=CA
+GLUE2EndpointTrustedCA: /DC=bg/DC=acad/CN=BG.ACAD CA
+GLUE2EndpointTrustedCA: /DC=GE/DC=TSU/CN=TSU Root CA
+GLUE2EndpointTrustedCA: /C=CY/O=CyGrid/O=HPCL/CN=CyGridCA
+GLUE2EndpointTrustedCA: /DC=org/DC=ugrid/CN=UGRID CA G2
+GLUE2EndpointTrustedCA: /C=AE/O=DarkMatter LLC/CN=DarkMatter IGTF CA
+GLUE2EndpointTrustedCA: /C=IR/O=IPM/OU=GCG/CN=IRAN-GRID-G2 CA
+GLUE2EndpointTrustedCA: /C=IT/O=INFN/CN=INFN Certification Authority
+GLUE2EndpointTrustedCA: /C=PT/O=LIPCA/CN=LIP Certification Authority
+GLUE2EndpointTrustedCA: /C=AE/O=DarkMatter LLC/CN=DarkMatter Secure CA
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 2
+GLUE2EndpointTrustedCA: /C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR
+GLUE2EndpointTrustedCA: /C=KR/O=KISTI/CN=KISTI Certification Authority
+GLUE2EndpointTrustedCA: /C=MX/O=UNAM/OU=UNAMgrid/CN=PKIUNAMgrid
+GLUE2EndpointTrustedCA: /C=RU/O=RDIG/CN=Russian Data-Intensive Grid CA
+GLUE2EndpointTrustedCA: /C=AE/O=DarkMatter LLC/CN=DarkMatter Assured CA
+GLUE2EndpointTrustedCA: /C=IR/O=IPM/O=IRAN-GRID/CN=IRAN-GRID CA
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/CN=QuoVadis Grid ICA G2
+GLUE2EndpointTrustedCA: /C=CL/O=REUNACA/CN=REUNA Certification Authority
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 2 G3
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 3 G3
+GLUE2EndpointTrustedCA: /C=BR/O=ANSP/OU=ANSPGrid CA/CN=ANSPGrid CA
+GLUE2EndpointTrustedCA: /C=CA/O=Grid/CN=Grid Canada Certificate Authority
+GLUE2EndpointTrustedCA: /C=EG/O=EG-GRID/CN=EG-GRID Certification Authority
+GLUE2EndpointTrustedCA: /C=ch/O=CERN/CN=CERN Root Certification Authority 2
+GLUE2EndpointTrustedCA: /C=DE/O=DFN-Verein/OU=DFN-PKI/CN=DFN SLCS-CA
+GLUE2EndpointTrustedCA: /DC=ORG/DC=SEE-GRID/CN=SEE-GRID CA 2013
+GLUE2EndpointTrustedCA: /C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Robots
+GLUE2EndpointTrustedCA: /C=AE/O=DarkMatter LLC/CN=DarkMatter Private Root CA G4
+GLUE2EndpointTrustedCA: /C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Services
+GLUE2EndpointTrustedCA: /C=FR/O=MENESR/OU=GRID-FR/CN=AC GRID-FR Personnels
+GLUE2EndpointTrustedCA: /DC=me/DC=ac/DC=MREN/CN=MREN-CA
+GLUE2EndpointTrustedCA: /C=US/O=Pittsburgh Supercomputing Center/CN=PSC MyProxy CA
+GLUE2EndpointTrustedCA: /C=AR/O=e-Ciencia/OU=UNLP/L=CeSPI/CN=PKIGrid
+GLUE2EndpointTrustedCA: /C=JP/O=KEK/OU=CRC/CN=KEK GRID Certificate Authority
+GLUE2EndpointTrustedCA: /C=NL/O=NIKHEF/CN=NIKHEF medium-security certification auth
+GLUE2EndpointTrustedCA: /C=UK/O=eScienceCA/OU=Authority/CN=UK e-Science CA 2B
+GLUE2EndpointTrustedCA: /C=UK/O=eScienceRoot/OU=Authority/CN=UK e-Science Root
+GLUE2EndpointTrustedCA: /O=Grid/O=NorduGrid/CN=NorduGrid Certification Authority 2015
+GLUE2EndpointTrustedCA: /DC=HK/DC=HKU/DC=GRID/CN=HKU Grid CA
+GLUE2EndpointTrustedCA: /C=US/O=Internet2/OU=InCommon/CN=InCommon IGTF Server CA
+GLUE2EndpointTrustedCA: /DC=ch/DC=cern/CN=CERN Grid Certification Authority
+GLUE2EndpointTrustedCA: /C=HU/O=NIIF/OU=Certificate Authorities/CN=NIIF Root CA 2
+GLUE2EndpointTrustedCA: /DC=CN/DC=Grid/CN=Root Certificate Authority at CNIC
+GLUE2EndpointTrustedCA: /DC=HK/DC=HKU/DC=GRID/CN=HKU Grid CA 2
+GLUE2EndpointTrustedCA: /C=DE/O=DFN-Verein/OU=DFN-PKI/CN=DFN-Verein PCA Grid - G01
+GLUE2EndpointTrustedCA: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA 3
+GLUE2EndpointTrustedCA: /DC=cz/DC=cesnet-ca/O=CESNET CA/CN=CESNET CA Root
+GLUE2EndpointTrustedCA: /C=CN/O=HEP/CN=Institute of High Energy Physics Certification Authority
+GLUE2EndpointTrustedCA: /DC=DZ/DC=ARN/O=DZ e-Science GRID/CN=DZ e-Science CA
+GLUE2EndpointTrustedCA: /DC=IN/DC=GARUDAINDIA/CN=Indian Grid Certification Authority
+GLUE2EndpointTrustedCA: /C=US/O=DigiCert Grid/OU=www.digicert.com/CN=DigiCert Grid Trust CA
+GLUE2EndpointTrustedCA: /DC=IN/DC=GARUDAINDIA/CN=Indian Grid Certification Authority 2
+GLUE2EndpointTrustedCA: /C=AT/O=AustrianGrid/OU=Certification Authority/CN=Certificate Issuer
+GLUE2EndpointTrustedCA: /C=GR/O=HellasGrid/OU=Certification Authorities/CN=HellasGrid CA 2016
+GLUE2EndpointTrustedCA: /C=TW/O=AS/CN=Academia Sinica Grid Computing Certification Authority Mercury
+GLUE2EndpointTrustedCA: /C=US/O=DigiCert Grid/OU=www.digicert.com/CN=DigiCert Grid Trust CA G2
+GLUE2EndpointTrustedCA: /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root CA
+GLUE2EndpointTrustedCA: /DC=net/DC=ES/OU=Certificate Authorities/CN=NERSC Online CA
+GLUE2EndpointTrustedCA: /DC=CN/DC=Grid/DC=SDG/CN=Scientific Data Grid CA - G2
+GLUE2EndpointTrustedCA: /DC=org/DC=cilogon/C=US/O=CILogon/CN=CILogon OSG CA 1
+GLUE2EndpointTrustedCA: /DC=com/DC=DigiCert-Grid/O=DigiCert Grid/CN=DigiCert Grid CA-1
+GLUE2EndpointTrustedCA: /DC=org/DC=cilogon/C=US/O=CILogon/CN=CILogon Silver CA 1
+GLUE2EndpointTrustedCA: /DC=nl/DC=dutchgrid/O=Certification Authorities/CN=DCA Root G1 CA
+GLUE2EndpointTrustedCA: /DC=com/DC=DigiCert-Grid/O=DigiCert Grid/CN=DigiCert Grid CA-1 G2
+GLUE2EndpointTrustedCA: /DC=com/DC=DigiCert-Grid/O=DigiCert Grid/CN=DigiCert Grid Root CA
+GLUE2EndpointTrustedCA: /C=NL/ST=Noord-Holland/L=Amsterdam/O=TERENA/CN=TERENA eScience SSL CA 3
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/OU=Issuing Certification Authority/CN=QuoVadis Grid ICA
+GLUE2EndpointTrustedCA: /C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-001
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-002
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-003
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-004
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-005
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-006
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-007
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-008
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-009
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-010
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-011
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-012
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-013
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-014
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-015
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-016
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-017
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-018
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-019
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-020
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-021
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-022
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-023
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-024
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-025
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-026
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-027
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-028
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-029
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-030
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-031
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-032
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-033
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-034
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-035
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-037
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-038
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-039
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-040
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-041
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-042
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-043
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-044
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-045
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-046
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-047
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-048
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-049
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-050
+GLUE2EndpointTrustedCA: /C=NL/ST=Noord-Holland/L=Amsterdam/O=TERENA/CN=TERENA eScience Personal CA 3
+GLUE2EndpointTrustedCA: /DC=MD/DC=MD-Grid/O=RENAM/OU=Certification Authority/CN=MD-Grid CA
+GLUE2EndpointTrustedCA: /DC=by/DC=grid/O=uiip.bas-net.by/CN=Belarusian Grid Certification Authority
+GLUE2EndpointTrustedCA: /DC=RO/DC=RomanianGRID/O=ROSA/OU=Certification Authority/CN=RomanianGRID CA
+GLUE2EndpointTrustedCA: /C=BM/O=QuoVadis Limited/OU=Root Certification Authority/CN=QuoVadis Root Certification Authority
+GLUE2EndpointTrustedCA: /DC=ke/DC=kenet/O=Kenya Education Network Trust/OU=Research Services/CN=KENET CA
+GLUE2EndpointTrustedCA: /C=US/O=National Center for Supercomputing Applications/OU=Certificate Authorities/CN=MyProxy CA 2013
+GLUE2EndpointTrustedCA: /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority
+GLUE2EndpointTrustedCA: /C=US/O=National Center for Supercomputing Applications/OU=Certificate Authorities/CN=Two Factor CA 2013
+GLUE2EndpointTrustedCA: /DC=ke/DC=kenet/O=Kenya Education Network Trust/OU=Research Services/CN=KENET ROOT CA
+GLUE2EndpointTrustedCA: /DC=eu/DC=rcauth/O=Certification Authorities/CN=Research and Collaboration Authentication Pilot G1 CA
+GLUE2EndpointTrustedCA: /DC=MY/DC=UPM/DC=MYIFAM/C=MY/O=MYIFAM/CN=Malaysian Identity Federation and Access Management
+GLUE2EndpointTrustedCA: /C=EU/L=WLCG/O=EGEE/OU=Workaround/CN=Work-around for Savannah #48458 ca-036
+
+# List of all shares with endpoint-specific images, templates and policies
+# Share https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39
+dn: GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Share
+objectClass: GLUE2CloudComputingShare
+GLUE2ShareID: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39
+GLUE2EntityName: Share in service https://sbgcloud.in2p3.fr:5000/v3_cloud.compute for VO fedcloud.egi.eu (Project a5eb30bba2c2497b90645fb199e34b39)
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2ShareServiceForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute
+GLUE2ShareDescription: Share in service https://sbgcloud.in2p3.fr:5000/v3_cloud.compute for VO fedcloud.egi.eu (Project a5eb30bba2c2497b90645fb199e34b39)
+GLUE2CloudComputingShareCloudComputingServiceForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute
+GLUE2ShareEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingShareCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2ShareEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingShareCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingShareInstanceMaxCPU: 48
+GLUE2CloudComputingShareInstanceMaxRAM: 512000
+GLUE2CloudComputingShareSLA: https://egi.eu/sla/fedcloud
+GLUE2CloudComputingShareTotalVM: 13
+GLUE2CloudComputingShareRunningVM: 13
+GLUE2CloudComputingShareSuspendedVM: 0
+GLUE2CloudComputingShareHaltedVM: 0
+GLUE2CloudComputingShareNetworkInfo: UNKNOWN
+GLUE2CloudComputingShareInstanceMaxAccelerators: 0
+GLUE2CloudComputingShareMaxVM: 64
+
+# Images for endpoint http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+# and share https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39
+dn: GLUE2CloudComputingImageID=575e9946-288f-4491-9432-23512016b7ab,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for Hadoop 2.7.1 [Ubuntu/14.04/VirtualBox]
+GLUE2CloudComputingImageID: 575e9946-288f-4491-9432-23512016b7ab
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 575e9946-288f-4491-9432-23512016b7ab
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/8f6c8f24-55a9-545e-a92d-82581de89c51:6382/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for Hadoop 2.7.1 [Ubuntu/14.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=4f1a634e-fffb-48b0-bb0c-dfc3b7447553,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for Jupyter Notebook [CentOS/6.8/KVM]
+GLUE2CloudComputingImageID: 4f1a634e-fffb-48b0-bb0c-dfc3b7447553
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 4f1a634e-fffb-48b0-bb0c-dfc3b7447553
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/18e9ec61-5825-5b06-8d4d-a3e3454916d4:6377/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for Jupyter Notebook [CentOS/6.8/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=bbb4f701-b86b-4878-9968-2a6de5002bb0,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI Centos 6 [CentOS/6/KVM]
+GLUE2CloudComputingImageID: bbb4f701-b86b-4878-9968-2a6de5002bb0
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: bbb4f701-b86b-4878-9968-2a6de5002bb0
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/e009209f-b62b-552e-b26c-eef351264f58:6390/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI Centos 6 [CentOS/6/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=4da0f36f-8ac1-4242-82f9-1b4490290c15,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for ubuntu 16.04 - testing cloudinit [Ubuntu/16.04/Vir]
+GLUE2CloudComputingImageID: 4da0f36f-8ac1-4242-82f9-1b4490290c15
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 4da0f36f-8ac1-4242-82f9-1b4490290c15
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/beeb1752-a027-5bc7-9be5-489f16ea1ead:6375/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for ubuntu 16.04 - testing cloudinit [Ubuntu/16.04/Vir] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=54c009e9-2ce4-483e-a05f-8823237b6ba4,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: OS Disk Image_EGI_FCTF
+GLUE2CloudComputingImageID: 54c009e9-2ce4-483e-a05f-8823237b6ba4
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 54c009e9-2ce4-483e-a05f-8823237b6ba4
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/b25c250b-637b-5622-a6fb-b0db4f2883f2:227/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:undefined
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=58be4d9b-b512-4efa-8b2b-8f8824380974,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: OS Disk Image
+GLUE2CloudComputingImageID: 58be4d9b-b512-4efa-8b2b-8f8824380974
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 58be4d9b-b512-4efa-8b2b-8f8824380974
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/b25c250b-637b-5622-a6fb-b0db4f2883f2:6383/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:OS Disk Image version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=209fdc4c-c4c3-4022-aabb-c7f1465896d5,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI Docker Ubuntu 16.04 [Ubuntu/16.04/VirtualBox]
+GLUE2CloudComputingImageID: 209fdc4c-c4c3-4022-aabb-c7f1465896d5
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 209fdc4c-c4c3-4022-aabb-c7f1465896d5
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/07fbd366-bbd2-5ca4-8f47-82c23ebc7d23:6388/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI Docker Ubuntu 16.04 [Ubuntu/16.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=604a65aa-ca60-47c2-ab26-caea7014b88d,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for VisIVO SD VA [CentOS/7.4/KVM]
+GLUE2CloudComputingImageID: 604a65aa-ca60-47c2-ab26-caea7014b88d
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 604a65aa-ca60-47c2-ab26-caea7014b88d
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/e5707bce-2a6f-5788-a97d-21d863f1ea83:6376/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for VisIVO SD VA [CentOS/7.4/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=2f56bf84-777a-44be-add7-a6e1e3653572,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for CernVM [Scientific Linux/6.0/KVM]
+GLUE2CloudComputingImageID: 2f56bf84-777a-44be-add7-a6e1e3653572
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 2f56bf84-777a-44be-add7-a6e1e3653572
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/c0482bc2-bf41-5d49-a85f-a750174a186b:6384/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for CernVM [Scientific Linux/6.0/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=f53763eb-28ce-47f9-950e-83387b9630b5,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI Ubuntu 14.04 [Ubuntu/14.04/VirtualBox]
+GLUE2CloudComputingImageID: f53763eb-28ce-47f9-950e-83387b9630b5
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: f53763eb-28ce-47f9-950e-83387b9630b5
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/38d42ca1-f4e9-5b5c-98de-37eb2d26301a:6373/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI Ubuntu 14.04 [Ubuntu/14.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=11d3ec76-0be5-466a-a7aa-78acd4419e79,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for gCube Smart Executor [Ubuntu/14.04/VirtualBox]
+GLUE2CloudComputingImageID: 11d3ec76-0be5-466a-a7aa-78acd4419e79
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 11d3ec76-0be5-466a-a7aa-78acd4419e79
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/2433ccee-a656-5671-96e2-942514e5ab11:6378/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for gCube Smart Executor [Ubuntu/14.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=0d8d0506-5c6c-4eae-8ec4-e2cb434d2fbd,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI CentOS 7 [CentOS/7/VirtualBox]
+GLUE2CloudComputingImageID: 0d8d0506-5c6c-4eae-8ec4-e2cb434d2fbd
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 0d8d0506-5c6c-4eae-8ec4-e2cb434d2fbd
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/fe71524e-66d3-5d09-8375-c5510ed5ccba:6389/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI CentOS 7 [CentOS/7/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=926204b5-51d1-4d2e-81cf-a6d429b76121,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for CentOS 6 minimal [CentOS/6.x/KVM]_Appliance
+GLUE2CloudComputingImageID: 926204b5-51d1-4d2e-81cf-a6d429b76121
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 926204b5-51d1-4d2e-81cf-a6d429b76121
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vm/image/cbb610f6-023f-44c0-b98a-1e27070790e9:3638/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:undefined
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=e756be9c-9074-4727-ab87-948a881911e5,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for APACHE HIVE [Ubuntu/14.04/VMWare]
+GLUE2CloudComputingImageID: e756be9c-9074-4727-ab87-948a881911e5
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: e756be9c-9074-4727-ab87-948a881911e5
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/2287633e-329d-5daf-acab-11bc9e4b1385:6380/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for APACHE HIVE [Ubuntu/14.04/VMWare] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=3c60bbe3-25b0-4d45-84f5-57383caa1a46,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Pymdsetup
+GLUE2CloudComputingImageID: 3c60bbe3-25b0-4d45-84f5-57383caa1a46
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 3c60bbe3-25b0-4d45-84f5-57383caa1a46
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/a2e676e9-39e1-5e84-942d-332d8107223d:6385/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Pymdsetup version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=4e79a6d7-9b15-420a-ac80-96f58725470b,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for FutureGateway [Ubuntu/14.04/KVM]
+GLUE2CloudComputingImageID: 4e79a6d7-9b15-420a-ac80-96f58725470b
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 4e79a6d7-9b15-420a-ac80-96f58725470b
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/d905439a-218a-5f70-8067-346ad9e84b85:6381/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for FutureGateway [Ubuntu/14.04/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=38b5079c-533d-4689-9159-9ade67969f08,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for DCI-Bridge [CentOS/7.4/KVM]
+GLUE2CloudComputingImageID: 38b5079c-533d-4689-9159-9ade67969f08
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 38b5079c-533d-4689-9159-9ade67969f08
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/b93d7f71-ae03-5826-bb44-d9154ed28a91:6387/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for DCI-Bridge [CentOS/7.4/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=ceb0434d-37af-4d1f-9efe-13f6f9937df2,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI Ubuntu 16.04 LTS [Ubuntu/16.04/VirtualBox]
+GLUE2CloudComputingImageID: ceb0434d-37af-4d1f-9efe-13f6f9937df2
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: ceb0434d-37af-4d1f-9efe-13f6f9937df2
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/8df7ba00-8467-57aa-bf1e-05754a2a73bf:6428/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI Ubuntu 16.04 LTS [Ubuntu/16.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=d6c8ee6e-9811-4960-9bfd-1a13667018dc,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI FedCloud Clients [Ubuntu/16.04/KVM]
+GLUE2CloudComputingImageID: d6c8ee6e-9811-4960-9bfd-1a13667018dc
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: d6c8ee6e-9811-4960-9bfd-1a13667018dc
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/8b3f7a4d-29ae-5bd1-ada5-efedd1993643:6386/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI FedCloud Clients [Ubuntu/16.04/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=16871d32-ea82-412e-8e23-47210cb26235,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for DataMiner [Ubuntu/14.04/VirtualBox]
+GLUE2CloudComputingImageID: 16871d32-ea82-412e-8e23-47210cb26235
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: 16871d32-ea82-412e-8e23-47210cb26235
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/5175fae4-ada9-5964-95cd-af5202bf76b5:6379/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for DataMiner [Ubuntu/14.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+# Templates for endpoint http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+# and share https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39
+dn: GLUE2ResourceID=29f63f0e-58c8-4c39-adb7-136509c8253c,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 29f63f0e-58c8-4c39-adb7-136509c8253c
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 29f63f0e-58c8-4c39-adb7-136509c8253c
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 29f63f0e-58c8-4c39-adb7-136509c8253c
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 65536
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 80
+
+dn: GLUE2ResourceID=1e9899d4-29fd-447b-ad91-da131ccfe077,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 1e9899d4-29fd-447b-ad91-da131ccfe077
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 1e9899d4-29fd-447b-ad91-da131ccfe077
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 1e9899d4-29fd-447b-ad91-da131ccfe077
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 2
+GLUE2CloudComputingInstanceTypeRAM: 4096
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 20
+
+dn: GLUE2ResourceID=f0b46aeb-f5ac-4e4d-ad53-fa8d5e8b01ef,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: f0b46aeb-f5ac-4e4d-ad53-fa8d5e8b01ef
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: f0b46aeb-f5ac-4e4d-ad53-fa8d5e8b01ef
+GLUE2CloudComputingInstanceTypeIDForEndpoint: f0b46aeb-f5ac-4e4d-ad53-fa8d5e8b01ef
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 131072
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 80
+
+dn: GLUE2ResourceID=11,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 11
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 11
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 11
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 131072
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 50
+
+dn: GLUE2ResourceID=10,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 10
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 10
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 10
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 131072
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 320
+
+dn: GLUE2ResourceID=13,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 13
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 13
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 13
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 48
+GLUE2CloudComputingInstanceTypeRAM: 512000
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 160
+
+dn: GLUE2ResourceID=12,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 12
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 12
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 12
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 262144
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 50
+
+dn: GLUE2ResourceID=887ec2f5-775d-4bd5-a4a4-c1763f0e6857,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 887ec2f5-775d-4bd5-a4a4-c1763f0e6857
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 887ec2f5-775d-4bd5-a4a4-c1763f0e6857
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 887ec2f5-775d-4bd5-a4a4-c1763f0e6857
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 32
+GLUE2CloudComputingInstanceTypeRAM: 65536
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 80
+
+dn: GLUE2ResourceID=1,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 1
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 1
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 1
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 1
+GLUE2CloudComputingInstanceTypeRAM: 512
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 1
+
+dn: GLUE2ResourceID=3,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 3
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 3
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 3
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 2
+GLUE2CloudComputingInstanceTypeRAM: 4096
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 40
+
+dn: GLUE2ResourceID=2,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 2
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 2
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 2
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 1
+GLUE2CloudComputingInstanceTypeRAM: 2048
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 20
+
+dn: GLUE2ResourceID=5,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 5
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 5
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 5
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 8
+GLUE2CloudComputingInstanceTypeRAM: 16384
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 160
+
+dn: GLUE2ResourceID=4,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 4
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 4
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 4
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 4
+GLUE2CloudComputingInstanceTypeRAM: 8192
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 80
+
+dn: GLUE2ResourceID=7,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 7
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 7
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 7
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 1
+GLUE2CloudComputingInstanceTypeRAM: 2048
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 50
+
+dn: GLUE2ResourceID=6,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 6
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 6
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 6
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 32768
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 320
+
+dn: GLUE2ResourceID=9,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 9
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 9
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 9
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 262144
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 320
+
+dn: GLUE2ResourceID=8,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: 8
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: 8
+GLUE2CloudComputingInstanceTypeIDForEndpoint: 8
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 1
+GLUE2CloudComputingInstanceTypeRAM: 4096
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 20
+
+# AccessPolicy for endpoint http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+# and share https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39
+dn: GLUE2PolicyID=http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS_fedcloud.egi.eu_Policy,GLUE2EndpointID=http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Policy
+objectClass: GLUE2AccessPolicy
+GLUE2PolicyID: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS_Policy
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2AccessPolicyEndpointForeignKey: http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2PolicyScheme: org.glite.standard
+GLUE2EntityName: Access control rules for fedcloud.egi.eu on http://sbgcloud.in2p3.fr:8774/v2.1/a5eb30bba2c2497b90645fb199e34b39_OpenStack_v2.1_X509-VOMS
+GLUE2PolicyRule: VO:fedcloud.egi.eu
+
+# Images for endpoint https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+# and share https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#575e9946-288f-4491-9432-23512016b7ab,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for Hadoop 2.7.1 [Ubuntu/14.04/VirtualBox]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#575e9946-288f-4491-9432-23512016b7ab
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#575e9946-288f-4491-9432-23512016b7ab
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/8f6c8f24-55a9-545e-a92d-82581de89c51:6382/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for Hadoop 2.7.1 [Ubuntu/14.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#4f1a634e-fffb-48b0-bb0c-dfc3b7447553,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for Jupyter Notebook [CentOS/6.8/KVM]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#4f1a634e-fffb-48b0-bb0c-dfc3b7447553
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#4f1a634e-fffb-48b0-bb0c-dfc3b7447553
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/18e9ec61-5825-5b06-8d4d-a3e3454916d4:6377/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for Jupyter Notebook [CentOS/6.8/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#bbb4f701-b86b-4878-9968-2a6de5002bb0,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI Centos 6 [CentOS/6/KVM]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#bbb4f701-b86b-4878-9968-2a6de5002bb0
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#bbb4f701-b86b-4878-9968-2a6de5002bb0
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/e009209f-b62b-552e-b26c-eef351264f58:6390/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI Centos 6 [CentOS/6/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#4da0f36f-8ac1-4242-82f9-1b4490290c15,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for ubuntu 16.04 - testing cloudinit [Ubuntu/16.04/Vir]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#4da0f36f-8ac1-4242-82f9-1b4490290c15
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#4da0f36f-8ac1-4242-82f9-1b4490290c15
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/beeb1752-a027-5bc7-9be5-489f16ea1ead:6375/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for ubuntu 16.04 - testing cloudinit [Ubuntu/16.04/Vir] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#54c009e9-2ce4-483e-a05f-8823237b6ba4,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: OS Disk Image_EGI_FCTF
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#54c009e9-2ce4-483e-a05f-8823237b6ba4
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#54c009e9-2ce4-483e-a05f-8823237b6ba4
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/b25c250b-637b-5622-a6fb-b0db4f2883f2:227/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:undefined
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#58be4d9b-b512-4efa-8b2b-8f8824380974,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: OS Disk Image
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#58be4d9b-b512-4efa-8b2b-8f8824380974
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#58be4d9b-b512-4efa-8b2b-8f8824380974
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/b25c250b-637b-5622-a6fb-b0db4f2883f2:6383/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:OS Disk Image version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#209fdc4c-c4c3-4022-aabb-c7f1465896d5,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI Docker Ubuntu 16.04 [Ubuntu/16.04/VirtualBox]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#209fdc4c-c4c3-4022-aabb-c7f1465896d5
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#209fdc4c-c4c3-4022-aabb-c7f1465896d5
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/07fbd366-bbd2-5ca4-8f47-82c23ebc7d23:6388/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI Docker Ubuntu 16.04 [Ubuntu/16.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#604a65aa-ca60-47c2-ab26-caea7014b88d,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for VisIVO SD VA [CentOS/7.4/KVM]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#604a65aa-ca60-47c2-ab26-caea7014b88d
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#604a65aa-ca60-47c2-ab26-caea7014b88d
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/e5707bce-2a6f-5788-a97d-21d863f1ea83:6376/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for VisIVO SD VA [CentOS/7.4/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#2f56bf84-777a-44be-add7-a6e1e3653572,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for CernVM [Scientific Linux/6.0/KVM]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#2f56bf84-777a-44be-add7-a6e1e3653572
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#2f56bf84-777a-44be-add7-a6e1e3653572
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/c0482bc2-bf41-5d49-a85f-a750174a186b:6384/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for CernVM [Scientific Linux/6.0/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#f53763eb-28ce-47f9-950e-83387b9630b5,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI Ubuntu 14.04 [Ubuntu/14.04/VirtualBox]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#f53763eb-28ce-47f9-950e-83387b9630b5
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#f53763eb-28ce-47f9-950e-83387b9630b5
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/38d42ca1-f4e9-5b5c-98de-37eb2d26301a:6373/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI Ubuntu 14.04 [Ubuntu/14.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#11d3ec76-0be5-466a-a7aa-78acd4419e79,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for gCube Smart Executor [Ubuntu/14.04/VirtualBox]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#11d3ec76-0be5-466a-a7aa-78acd4419e79
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#11d3ec76-0be5-466a-a7aa-78acd4419e79
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/2433ccee-a656-5671-96e2-942514e5ab11:6378/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for gCube Smart Executor [Ubuntu/14.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#0d8d0506-5c6c-4eae-8ec4-e2cb434d2fbd,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI CentOS 7 [CentOS/7/VirtualBox]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#0d8d0506-5c6c-4eae-8ec4-e2cb434d2fbd
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#0d8d0506-5c6c-4eae-8ec4-e2cb434d2fbd
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/fe71524e-66d3-5d09-8375-c5510ed5ccba:6389/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI CentOS 7 [CentOS/7/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#926204b5-51d1-4d2e-81cf-a6d429b76121,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for CentOS 6 minimal [CentOS/6.x/KVM]_Appliance
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#926204b5-51d1-4d2e-81cf-a6d429b76121
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#926204b5-51d1-4d2e-81cf-a6d429b76121
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vm/image/cbb610f6-023f-44c0-b98a-1e27070790e9:3638/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:undefined
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#e756be9c-9074-4727-ab87-948a881911e5,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for APACHE HIVE [Ubuntu/14.04/VMWare]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#e756be9c-9074-4727-ab87-948a881911e5
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#e756be9c-9074-4727-ab87-948a881911e5
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/2287633e-329d-5daf-acab-11bc9e4b1385:6380/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for APACHE HIVE [Ubuntu/14.04/VMWare] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#3c60bbe3-25b0-4d45-84f5-57383caa1a46,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Pymdsetup
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#3c60bbe3-25b0-4d45-84f5-57383caa1a46
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#3c60bbe3-25b0-4d45-84f5-57383caa1a46
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/a2e676e9-39e1-5e84-942d-332d8107223d:6385/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Pymdsetup version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#4e79a6d7-9b15-420a-ac80-96f58725470b,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for FutureGateway [Ubuntu/14.04/KVM]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#4e79a6d7-9b15-420a-ac80-96f58725470b
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#4e79a6d7-9b15-420a-ac80-96f58725470b
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/d905439a-218a-5f70-8067-346ad9e84b85:6381/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for FutureGateway [Ubuntu/14.04/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#38b5079c-533d-4689-9159-9ade67969f08,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for DCI-Bridge [CentOS/7.4/KVM]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#38b5079c-533d-4689-9159-9ade67969f08
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#38b5079c-533d-4689-9159-9ade67969f08
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/b93d7f71-ae03-5826-bb44-d9154ed28a91:6387/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for DCI-Bridge [CentOS/7.4/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#ceb0434d-37af-4d1f-9efe-13f6f9937df2,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI Ubuntu 16.04 LTS [Ubuntu/16.04/VirtualBox]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#ceb0434d-37af-4d1f-9efe-13f6f9937df2
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#ceb0434d-37af-4d1f-9efe-13f6f9937df2
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/8df7ba00-8467-57aa-bf1e-05754a2a73bf:6428/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI Ubuntu 16.04 LTS [Ubuntu/16.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#d6c8ee6e-9811-4960-9bfd-1a13667018dc,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for EGI FedCloud Clients [Ubuntu/16.04/KVM]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#d6c8ee6e-9811-4960-9bfd-1a13667018dc
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#d6c8ee6e-9811-4960-9bfd-1a13667018dc
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/8b3f7a4d-29ae-5bd1-ada5-efedd1993643:6386/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for EGI FedCloud Clients [Ubuntu/16.04/KVM] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+dn: GLUE2CloudComputingImageID=http://schemas.openstack.org/template/os#16871d32-ea82-412e-8e23-47210cb26235,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2CloudComputingImage
+GLUE2EntityName: Image for DataMiner [Ubuntu/14.04/VirtualBox]
+GLUE2CloudComputingImageID: http://schemas.openstack.org/template/os#16871d32-ea82-412e-8e23-47210cb26235
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2CloudComputingImageIDForEndpoint: http://schemas.openstack.org/template/os#16871d32-ea82-412e-8e23-47210cb26235
+GLUE2CloudComputingImageCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingImageCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingImageMarketPlaceID: https://appdb.egi.eu/store/vo/image/5175fae4-ada9-5964-95cd-af5202bf76b5:6379/
+GLUE2CloudComputingImageOSName: UNKNOWN
+GLUE2CloudComputingImageOSVersion: UNKNOWN
+GLUE2CloudComputingImageOSFamily: UNKNOWN
+GLUE2CloudComputingImageOSPlatform: amd64
+GLUE2EntityOtherInfo: description:Image for DataMiner [Ubuntu/14.04/VirtualBox] version UNKNOWN on UNKNOWN UNKNOWN UNKNOWN amd64
+GLUE2CloudComputingImageDiskSize: UNKNOWN
+GLUE2CloudComputingImageAccessInfo: none
+
+# Templates for endpoint https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+# and share https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#29f63f0e-58c8-4c39-adb7-136509c8253c,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#29f63f0e-58c8-4c39-adb7-136509c8253c
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#29f63f0e-58c8-4c39-adb7-136509c8253c
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#29f63f0e-58c8-4c39-adb7-136509c8253c
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 65536
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 80
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#1e9899d4-29fd-447b-ad91-da131ccfe077,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#1e9899d4-29fd-447b-ad91-da131ccfe077
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#1e9899d4-29fd-447b-ad91-da131ccfe077
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#1e9899d4-29fd-447b-ad91-da131ccfe077
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 2
+GLUE2CloudComputingInstanceTypeRAM: 4096
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 20
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#f0b46aeb-f5ac-4e4d-ad53-fa8d5e8b01ef,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#f0b46aeb-f5ac-4e4d-ad53-fa8d5e8b01ef
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#f0b46aeb-f5ac-4e4d-ad53-fa8d5e8b01ef
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#f0b46aeb-f5ac-4e4d-ad53-fa8d5e8b01ef
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 131072
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 80
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#11,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#11
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#11
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#11
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 131072
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 50
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#10,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#10
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#10
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#10
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 131072
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 320
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#13,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#13
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#13
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#13
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 48
+GLUE2CloudComputingInstanceTypeRAM: 512000
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 160
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#12,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#12
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#12
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#12
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 262144
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 50
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#887ec2f5-775d-4bd5-a4a4-c1763f0e6857,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#887ec2f5-775d-4bd5-a4a4-c1763f0e6857
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#887ec2f5-775d-4bd5-a4a4-c1763f0e6857
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#887ec2f5-775d-4bd5-a4a4-c1763f0e6857
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 32
+GLUE2CloudComputingInstanceTypeRAM: 65536
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 80
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#1,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#1
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#1
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#1
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 1
+GLUE2CloudComputingInstanceTypeRAM: 512
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 1
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#3,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#3
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#3
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#3
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 2
+GLUE2CloudComputingInstanceTypeRAM: 4096
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 40
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#2,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#2
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#2
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#2
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 1
+GLUE2CloudComputingInstanceTypeRAM: 2048
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 20
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#5,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#5
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#5
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#5
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 8
+GLUE2CloudComputingInstanceTypeRAM: 16384
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 160
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#4,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#4
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#4
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#4
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 4
+GLUE2CloudComputingInstanceTypeRAM: 8192
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 80
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#7,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#7
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#7
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#7
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 1
+GLUE2CloudComputingInstanceTypeRAM: 2048
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 50
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#6,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#6
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#6
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#6
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 32768
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 320
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#9,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#9
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#9
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#9
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 16
+GLUE2CloudComputingInstanceTypeRAM: 262144
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 320
+
+dn: GLUE2ResourceID=http://schemas.openstack.org/template/resource#8,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Resource
+objectClass: GLUE2CloudComputingInstanceType
+GLUE2ResourceID: http://schemas.openstack.org/template/resource#8
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2EntityValidity: 3600
+GLUE2EntityName: http://schemas.openstack.org/template/resource#8
+GLUE2CloudComputingInstanceTypeIDForEndpoint: http://schemas.openstack.org/template/resource#8
+GLUE2ResourceManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingManagerForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_manager
+GLUE2CloudComputingInstanceTypeCloudComputingEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2CloudComputingInstanceTypePlatform: amd64
+GLUE2CloudComputingInstanceTypevCPU: 1
+GLUE2CloudComputingInstanceTypeRAM: 4096
+GLUE2CloudComputingInstanceTypeNetworkIn: undefined
+GLUE2CloudComputingInstanceTypeNetworkOut: True
+GLUE2CloudComputingInstanceTypeNetworkInfo: UNKNOWN
+GLUE2CloudComputingInstanceTypeEphemeralStorage: 0
+GLUE2CloudComputingInstanceTypeDisk: 20
+
+# AccessPolicy for endpoint https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+# and share https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39
+dn: GLUE2PolicyID=https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS_fedcloud.egi.eu_Policy,GLUE2EndpointID=https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Policy
+objectClass: GLUE2AccessPolicy
+GLUE2PolicyID: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS_Policy
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2AccessPolicyEndpointForeignKey: https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2PolicyScheme: org.glite.standard
+GLUE2EntityName: Access control rules for fedcloud.egi.eu on https://sbgcloud.in2p3.fr:8787/occi1.1/_OCCI_1.1_X509-VOMS
+GLUE2PolicyRule: VO:fedcloud.egi.eu
+
+# MappingPolicy for share https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39
+dn: GLUE2PolicyID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39_Policy,GLUE2ShareID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39,GLUE2ServiceID=https://sbgcloud.in2p3.fr:5000/v3_cloud.compute,GLUE2GroupID=resource,o=glue
+objectClass: GLUE2Entity
+objectClass: GLUE2Policy
+objectClass: GLUE2MappingPolicy
+GLUE2PolicyID: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39_Policy
+GLUE2EntityCreationTime: 2018-09-25T12:40:00.137499
+GLUE2PolicyScheme: org.glite.standard
+GLUE2MappingPolicyShareForeignKey: https://sbgcloud.in2p3.fr:5000/v3_cloud.compute_share_fedcloud.egi.eu_a5eb30bba2c2497b90645fb199e34b39
+GLUE2PolicyRule: VOMS:/fedcloud.egi.eu/Role=VMOperators
+GLUE2PolicyUserDomainForeignKey: fedcloud.egi.eu
+
+

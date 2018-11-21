@@ -3,9 +3,11 @@
 ams_host:
 ams_project:
 ams_topic:
+msg_file_path:
 
 [AUTH]
 
+token:
 cert_path:
 key_path:
 
