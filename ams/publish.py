@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import os
 import sys
 import logging
 import argparse
@@ -45,7 +46,11 @@ def publish(config):
 
 def main(args=None):
 
-    f_handler = logging.FileHandler('ams.log')
+    ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    CONF_FILE = os.path.join(ROOT_DIR, 'conf', 'settings.conf')
+
+    LOG_FILE = os.path.join(ROOT_DIR, 'ams.log')
+    f_handler = logging.FileHandler(LOG_FILE)
     f_handler.setFormatter(
         logging.Formatter('%(asctime)s %(name)s [%(levelname)s]: %(message)s'))
     logger.addHandler(f_handler)
@@ -53,17 +58,14 @@ def main(args=None):
     logger.addHandler(c_handler)
     logger.setLevel(logging.INFO)
 
+    parser = argparse.ArgumentParser(description="Publish ams message")
+    parser.add_argument("-c", "--ConfigPath", type=str, help="Config file path")
+    args = parser.parse_args()
+
     config = ConfigParser.ConfigParser()
-    if args.ConfigPath is None:
-        config.read('../conf/settings.conf')
-    else:
+    if args and args.ConfigPath:
         config.read(args.ConfigPath)
+    else:
+        config.read(CONF_FILE)
 
     publish(config)
-
-if __name__ == "__main__":
-
-    parser = argparse.ArgumentParser(description="Publish ams message")
-    parser.add_argument("-c", "--ConfigPath", type=str, help="Cpnfig file path")
-
-    sys.exit(main(parser.parse_args()))
