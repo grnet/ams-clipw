@@ -5,6 +5,7 @@ import sys
 import logging
 import argparse
 import ConfigParser
+import subprocess
 from argo_ams_library import ArgoMessagingService, AmsMessage, AmsException
 
 logger = logging.getLogger("ams.publish")
@@ -19,6 +20,7 @@ def publish(config):
     cert_path = config.get("AUTH", "cert_path")
     key_path = config.get("AUTH", "key_path")
     msg_file_path = config.get("AMS", "msg_file_path")
+    exec_to_run = config.get("AMS", "exec_to_run")
 
     # initialize service
     if token:
@@ -31,8 +33,11 @@ def publish(config):
             key=key_path)
 
     data = ''
-    with open(msg_file_path, 'r') as ldif:
-        data = ldif.read()
+    if exec_to_run:
+        data = subprocess.check_output([exec_to_run, msg_file_path])
+    else:
+        with open(msg_file_path, 'r') as ldif:
+            data = ldif.read()
 
     msg = AmsMessage(data=data).dict()
     try:
