@@ -2,7 +2,7 @@
 
 Python script to publish cloud info to AMS.
 
-`publish.py -c <ConfigPath>`
+`ams-clipw -c <ConfigPath>`
 
 `-c : Path to appropriate config file.`
 
@@ -12,7 +12,7 @@ Python script to publish cloud info to AMS.
 # cd ams-clipw/
 # edit the config file with the appropriate settings 
 # python setup.py  install
-
+```
 
 ## Configuration
 
@@ -24,9 +24,11 @@ ams_host:
 # under which ams project the message will be published
 ams_project:
 # under which ams topic the message will be published  (SITE_<name of site in GOCDB>_ENDPOINT_<identifier of the endpoint in GOCDB>  e.g. SITE_IN2P3-IRES_ENDPOINT_7535G0
-ams_topic:  
+ams_topic:
 # message body (path to the ldif that cloud info provider produces)
-msg_file_path: 
+msg_file_path:
+# executable to run to obtain ldif output
+exec_to_run
 
 [AUTH]
 # Use either token or cert_path and key_path
