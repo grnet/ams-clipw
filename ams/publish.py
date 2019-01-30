@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import os
-import sys
 import logging
 import argparse
 import ConfigParser
@@ -34,10 +33,21 @@ def publish(config):
 
     data = ''
     if exec_to_run:
-        data = subprocess.check_output([exec_to_run, msg_file_path])
+        try:
+            data = subprocess.check_output(
+                [exec_to_run],
+                stderr=subprocess.STDOUT,
+                shell=True)
+        except subprocess.CalledProcessError as cpe:
+            logger.error(cpe)
+            return
     else:
-        with open(msg_file_path, 'r') as ldif:
-            data = ldif.read()
+        try:
+            with open(msg_file_path, 'r') as ldif:
+                data = ldif.read()
+        except IOError as ioe:
+            logger.error(ioe)
+            return
 
     msg = AmsMessage(data=data).dict()
     try:
@@ -49,7 +59,7 @@ def publish(config):
         logger.error("Failed to publish message: %s" % e)
 
 
-def main(args=None):
+def main():
 
     ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     CONF_FILE = os.path.join(ROOT_DIR, 'conf', 'settings.conf')
