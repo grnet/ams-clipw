@@ -27,8 +27,8 @@ ams_project:
 ams_topic:
 # message body (path to the ldif that cloud info provider produces)
 msg_file_path:
-# executable to run to obtain ldif output
-exec_to_run
+# executable to run to obtain ldif output, i.e. cat test.ldif
+exec_to_run:
 
 [AUTH]
 # Use either token or cert_path and key_path

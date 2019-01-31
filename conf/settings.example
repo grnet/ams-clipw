@@ -4,6 +4,7 @@ ams_host:
 ams_project:
 ams_topic:
 msg_file_path:
+exec_to_run:
 
 [AUTH]
 
