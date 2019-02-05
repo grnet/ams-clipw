@@ -19,7 +19,7 @@ def publish(config):
     cert_path = config.get("AUTH", "cert_path")
     key_path = config.get("AUTH", "key_path")
     msg_file_path = config.get("AMS", "msg_file_path")
-    exec_to_run = config.get("AMS", "exec_to_run")
+    info_provider_path = config.get("AMS", "info_provider_path")
 
     # initialize service
     if token:
@@ -32,10 +32,10 @@ def publish(config):
             key=key_path)
 
     data = ''
-    if exec_to_run:
+    if info_provider_path:
         try:
             data = subprocess.check_output(
-                [exec_to_run],
+                [info_provider_path],
                 stderr=subprocess.STDOUT,
                 shell=True)
         except subprocess.CalledProcessError as cpe:
