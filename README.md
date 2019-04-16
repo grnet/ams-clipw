@@ -25,7 +25,7 @@ ams_host:
 ams_project:
 # under which ams topic the message will be published  it follows the patern 
 #(SITE_<name of site in GOCDB>_ENDPOINT_<identifier of the endpoint in GOCDB> 
-# e.g. SITE_IN2P3-IRES_ENDPOINT_7535G0
+# e.g. SITE_HG-09-Okeanos-Cloud_ENDPOINT_11369G0
 # It is expected that you have registered your provider in gocdb with 
 # service_type eu.egi.cloud.infoProvider and marked to be in Production.
 # e.g https://goc.egi.eu/portal/index.php?Page_Type=Service&id=11369
