@@ -1,11 +1,14 @@
 [AMS]
 
-ams_host:
-ams_project:
-ams_topic:
+ams_host: msg-devel.argo.grnet.gr 
+ams_project: egi_cloud_info
+ams_topic: SITE_HG-09-Okeanos-Cloud_ENDPOINT_11369G0
+msg_file_path:
+info_provider_path: /var/lib/bdii/gip/provider/glite-info-provider-site-glue2
 
 [AUTH]
 
+token: 
 cert_path:
 key_path:
 
