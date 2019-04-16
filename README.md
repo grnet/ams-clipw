@@ -24,6 +24,8 @@ ams_host:
 # under which ams project the message will be published
 ams_project:
 # under which ams topic the message will be published  (SITE_<name of site in GOCDB>_ENDPOINT_<identifier of the endpoint in GOCDB>  e.g. SITE_IN2P3-IRES_ENDPOINT_7535G0
+# It is expected that you have registered your provider in gocdb with service_type eu.egi.cloud.infoProvider and marked to be in Production.
+# e.g https://goc.egi.eu/portal/index.php?Page_Type=Service&id=11369
 ams_topic:
 # message body (path to the ldif that cloud info provider produces)
 msg_file_path:
