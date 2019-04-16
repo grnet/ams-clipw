@@ -8,7 +8,7 @@ info_provider_path: /var/lib/bdii/gip/provider/glite-info-provider-site-glue2
 
 [AUTH]
 
-token: c4ca81184811bd5bb8b0d8da3a2c2511c920d600
+token: 
 cert_path:
 key_path:
 
