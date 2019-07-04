@@ -36,7 +36,6 @@ def publish(config):
         try:
             data = subprocess.check_output(
                 [info_provider_path],
-                stderr=subprocess.STDOUT,
                 shell=True)
         except subprocess.CalledProcessError as cpe:
             logger.error(cpe)
