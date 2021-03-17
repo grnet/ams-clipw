@@ -5,6 +5,8 @@ import logging
 import argparse
 import ConfigParser
 import subprocess
+import sys
+
 from argo_ams_library import ArgoMessagingService, AmsMessage, AmsException
 
 logger = logging.getLogger("ams.publish")
@@ -36,18 +38,17 @@ def publish(config):
         try:
             data = subprocess.check_output(
                 [info_provider_path],
-                stderr=subprocess.STDOUT,
                 shell=True)
         except subprocess.CalledProcessError as cpe:
             logger.error(cpe)
-            return
+            return 1
     else:
         try:
             with open(msg_file_path, 'r') as ldif:
                 data = ldif.read()
         except IOError as ioe:
             logger.error(ioe)
-            return
+            return 1
 
     msg = AmsMessage(data=data).dict()
     try:
@@ -55,8 +56,10 @@ def publish(config):
         logger.info(
             "Successfully published message at: %s, ret: %s"
             % (topic, ret))
+        return 0
     except AmsException as e:
         logger.error("Failed to publish message: %s" % e)
+        return 1
 
 
 def main():
@@ -83,4 +86,4 @@ def main():
     else:
         config.read(CONF_FILE)
 
-    publish(config)
+    sys.exit(publish(config))
